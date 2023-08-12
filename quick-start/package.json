@@ -1,29 +1,27 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "browser-window-sample",
+  "version": "0.0.1",
+  "description": "A sample Electron application to demonstrate BrowserWindow creation",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/wal-wizard/Electron"
   },
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "BrowserWindow",
+    "sample"
   ],
-  "author": "GitHub",
+  "author": "We Santos",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^25.4.0"
   },
   "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+    "url": "https://github.com/wal-wizard/Electron/issues"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme"
+  "homepage": "https://github.com/wal-wizard/Electron"
 }
