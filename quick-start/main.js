@@ -3,7 +3,6 @@ const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
 function createWindow() {
-  
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     // show: false,
@@ -16,7 +15,13 @@ function createWindow() {
     maxHeight: 768, // DEFAULT: UNLIMITED
     resizable: true, // DEFAULT: true
     movable: true, // DEFAULT: true
-    alwaysOnTop: true, //DEFAULT: false
+    alwaysOnTop: false, //DEFAULT: false
+    
+    // title: "Goodbye, Moon?", //DEFAULT: "Electron"
+    // frame: false, //DEFAUL: true
+    // titleBarOverlay: 'hidden', //DEFAULT: 'default'
+    // titleBarStyle: 'hidden-inset', //DEFAULT: 'default'
+
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
