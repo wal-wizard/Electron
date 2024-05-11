@@ -1,0 +1,32 @@
+{
+  "name": "markdown-editor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build:linux": "electron-builder --linux --dir",
+    "dist:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.my.app.id",
+    "linux": {
+      "category": "Utility"
+    }
+  },
+  "keywords": [
+    "Linux",
+    "Electron",
+    "App"
+  ],
+  "author": "We",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^30.0.3",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  }
+}
