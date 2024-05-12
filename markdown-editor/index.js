@@ -16,4 +16,6 @@ app.on("ready", () => {
     window.loadFile("index.html")
 })
 
+
+
 Menu.setApplicationMenu(menu)
