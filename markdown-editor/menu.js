@@ -1,7 +1,6 @@
 const { app, Menu, shell } = require("electron");
-const { ipcMain } = require('electron');
-const { BrowserWindow } = require('electron');
 
+// ====================== Menu Bar ======================
 const template = [
     {
         role: "help",
@@ -75,12 +74,7 @@ if (process.env.DEBUG) {
     })
 }
 
-ipcMain.on('editor-reply', (event, arg) => {
-    console.log(`Received reply from web page: ${arg}`);
-});
-
-// const window = BrowserWindow.getFocusedWindow();
-// window.webContents.send('<channel>', args);
+// ====================== Eeditor-event =================
 
 const menu = Menu.buildFromTemplate(template);
 module.exports = menu;

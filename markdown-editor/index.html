@@ -8,6 +8,7 @@
       href="./node_modules/simplemde/dist/simplemde.min.css"
     />
     <script src="./node_modules/simplemde/dist/simplemde.min.js"></script>
+    <script type="module" src="script.js"></script>
     <title>Document</title>
 
     <style>
@@ -31,14 +32,6 @@
       var editor = new SimpleMDE({
         element: document.getElementById("editor"),
       });
-
-    //   const { ipcRenderer } = require("electron");
-    //   ipcRenderer.on("editor-event", (event, arg) => {
-    //     console.log(arg);
-    //     event.sender.send("editor-reply", `Received ${arg}`);
-    //   });
-    //   ipcRenderer.send("editor-reply", "Page Loaded");
     </script>
-
   </body>
 </html>

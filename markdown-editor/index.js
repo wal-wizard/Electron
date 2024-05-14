@@ -14,6 +14,7 @@ app.on("ready", () => {
     })
 
     window.loadFile("index.html")
+    
 })
 
 
